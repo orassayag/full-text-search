@@ -1,0 +1,21 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "elasticlunr": "^0.9.5",
+        "eslint": "^5.1.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^23.3.7",
+        "jest": "^23.6.0",
+        "ts-jest": "^23.10.4"
+    }
+}
