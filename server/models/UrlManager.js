@@ -20,7 +20,6 @@ module.exports = class UrlManager {
             this.addField('url');
         });
 
-
         // Insert all docs.
         Object.entries(setOfRules).forEach((value, i) => {
             urlItemsArray.push(new UrlItem(i, value[0], value[1]));
