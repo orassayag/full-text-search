@@ -15,7 +15,7 @@ module.exports = class UrlManager {
         const urlItemsArray = [];
         let matchResult = null;
 
-        const idx = elasticlunr(function() {
+        const idx = elasticlunr(function () {
             this.addField('id');
             this.addField('url');
         });

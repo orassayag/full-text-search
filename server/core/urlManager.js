@@ -16,45 +16,45 @@ const setOfRules = {
 };
 
 const urlsForTest = [{
-        url: 'www.facebook.com/connect.js',
-        match: 'Facebook'
-    },
-    {
-        url: 'www.facebook.com/v1/v1.js',
-        match: 'Facebook Connect'
-    },
-    {
-        url: 'www.google-analytics.com/*',
-        match: 'Google Analytics'
-    },
-    {
-        url: 'www.google-analytics.com/scripts/index_v1.js',
-        match: 'Google Analytics v1'
-    },
-    {
-        url: 'www.google-analytics.com/scripts/index_v2.js',
-        match: 'Google Analytics v2'
-    },
-    {
-        url: 'www.twitter.com/scripts/v1/index.js',
-        match: 'Twitter'
-    },
-    {
-        url: 'www.twitter.com/scripts/v2/index.js',
-        match: 'Twitter'
-    },
-    {
-        url: 'www.linkedin.com/scripts/*/index.js',
-        match: 'Twitter'
-    },
-    {
-        url: 'www.outbrain.com/scripts/*',
-        match: 'Outbrain'
-    },
-    {
-        url: 'www.testdomain.com/scripts/*',
-        match: 'Outbrain'
-    }
+    url: 'www.facebook.com/connect.js',
+    match: 'Facebook'
+},
+{
+    url: 'www.facebook.com/v1/v1.js',
+    match: 'Facebook Connect'
+},
+{
+    url: 'www.google-analytics.com/*',
+    match: 'Google Analytics'
+},
+{
+    url: 'www.google-analytics.com/scripts/index_v1.js',
+    match: 'Google Analytics v1'
+},
+{
+    url: 'www.google-analytics.com/scripts/index_v2.js',
+    match: 'Google Analytics v2'
+},
+{
+    url: 'www.twitter.com/scripts/v1/index.js',
+    match: 'Twitter'
+},
+{
+    url: 'www.twitter.com/scripts/v2/index.js',
+    match: 'Twitter'
+},
+{
+    url: 'www.linkedin.com/scripts/*/index.js',
+    match: 'Twitter'
+},
+{
+    url: 'www.outbrain.com/scripts/*',
+    match: 'Outbrain'
+},
+{
+    url: 'www.testdomain.com/scripts/*',
+    match: 'Outbrain'
+}
 ];
 
 urlsForTest.forEach(url => {
