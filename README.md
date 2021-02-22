@@ -1,6 +1,6 @@
-# Server
+# Full Text Search
 
-Built in November 2018. Application of Node.js with elasticlunr.js to demonstate full text search engine example.
+Built in November 2018. A simple application of Node.js with Elasticlunr.js to demonstrate full text search engine example.
 
 ## Getting Started
 
@@ -8,6 +8,7 @@ Clone the project to your computer.
 Steps to view the solution:
 1. Open server project on IDE (I used VS CODE).
 2. Terminal: node index.js
+3. In Terminal: npm start
 Happy testing! :)
 
 ### Prerequisites
