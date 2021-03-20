@@ -11,7 +11,7 @@ class UrlItem {
 module.exports = class UrlManager {
 
     findBestMatchForURL(url, setOfRules) {
-        // Let's convert the rules to standard array.
+        // Let's convert the rules to a standard array.
         const urlItemsArray = [];
         let matchResult = null;
 

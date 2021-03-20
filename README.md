@@ -8,17 +8,16 @@ Clone the project to your computer.
 Steps to view the solution:
 1. Open server project on IDE (I used VS CODE).
 2. Terminal: node index.js
-3. In Terminal: npm start
+3. In the Terminal: npm start
 Happy testing! :)
 
 ### Prerequisites
 
-You'll need to install VS Code, Node, and clone the project, run npm i + node index.js
+You'll need to install VS Code, Node.js, and clone the project, run npm i + node index.js
 
 ## Built With
 
 * [Node.JS](https://nodejs.org/en/) - The web framework used - server side.
-* [React.JS](https://reactjs.org/) - The web framework used - client side.
 
 ## Contributing
 
@@ -38,4 +37,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This application has UNLICENSED License.
+This application has an UNLICENSED License.
