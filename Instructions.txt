@@ -1,4 +1,4 @@
 Steps to view the solution:
-1. Open server project on IDE (I used VS CODE).
-2. Terminal: node index.js
+1. Open server project on IDE (I used VSCode).
+2. In the terminal: node index.js
 Happy testing! :)

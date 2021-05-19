@@ -7,13 +7,13 @@ Built in November 2018. A simple application of Node.js with Elasticlunr.js to d
 Clone the project to your computer.
 Steps to view the solution:
 1. Open server project on IDE (I used VS CODE).
-2. Terminal: node index.js
+2. In the terminal: node index.js
 3. In the Terminal: npm start
 Happy testing! :)
 
 ### Prerequisites
 
-You'll need to install VS Code, Node.js, and clone the project, run npm i + node index.js
+You'll need to install VSCode, Node, and clone the project, and in the terminal run npm i + node index.js
 
 ## Built With
 
