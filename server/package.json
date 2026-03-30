@@ -2,7 +2,7 @@
     "name": "full-text-search",
     "version": "1.0.0",
     "private": false,
-    "description": "",
+    "description": "A Node.js demonstration application showcasing full-text search capabilities using Elasticlunr.js for URL pattern matching and classification",
     "repository": {
         "type": "git",
         "url": "git://github.com/orassayag/full-text-search.git"
@@ -11,9 +11,19 @@
     "scripts": {
         "start": "node index.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "full-text-search",
+        "elasticlunr",
+        "url-matching",
+        "pattern-matching",
+        "search-engine",
+        "nodejs",
+        "url-classification",
+        "wildcard-matching",
+        "javascript"
+    ],
+    "author": "Or Assayag <orassayag@gmail.com>",
+    "license": "MIT",
     "dependencies": {
         "elasticlunr": "^0.9.5",
         "eslint": "^5.1.0"
