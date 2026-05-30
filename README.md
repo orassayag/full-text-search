@@ -6,6 +6,8 @@ Built in November 2018. A practical example of implementing a full-text search e
 
 ## Features
 
+### Core Capabilities
+
 - 🔍 Full-text search indexing using Elasticlunr.js
 - 🌐 URL pattern matching with wildcard support
 - 🎯 Best match algorithm for overlapping patterns
@@ -13,7 +15,28 @@ Built in November 2018. A practical example of implementing a full-text search e
 - 📝 Simple rule-based configuration
 - 🧪 Built-in test cases for validation
 
+### Technical Excellence
+
+- **Elasticlunr.js**: Efficient client-side search indexing
+- **Modular Design**: Separation of concerns between rules and logic
+- **Linting**: Consistent code style with ESLint
+- **Fast Lookups**: Optimized search performance for real-time matching
+
+### Developer Experience
+
+- **Zero Config**: Ready to run out of the box
+- **Clear Logs**: Descriptive output for matching results
+- **Test-Driven**: Built-in validation suite
+- **Simple Extension**: Easy to add new rules and test cases
+
 ## Architecture
+
+### Architecture Principles
+
+- **Simplicity**: Minimal dependencies and straightforward logic
+- **Performance**: High-speed lookups through pre-indexed data
+- **Maintainability**: Clear separation between configuration and implementation
+- **Flexibility**: Support for both exact and wildcard URL patterns
 
 ```mermaid
 graph TD
@@ -21,7 +44,7 @@ graph TD
     C[Input URL] -->|Search| B
     B -->|Match Score| D[UrlManager]
     D -->|Best Match| E[Service Name]
-    
+
     F[core/urlManager.js] -->|Defines| A
     F -->|Provides| C
     G[models/UrlManager.js] -->|Implements| D
@@ -36,13 +59,13 @@ sequenceDiagram
     participant UrlManager
     participant Elasticlunr
     participant Index
-    
+
     User->>UrlManager: Load Rules
     UrlManager->>Elasticlunr: Create Index
     loop For Each Rule
         UrlManager->>Index: Add Document
     end
-    
+
     User->>UrlManager: findBestMatchForURL(url)
     UrlManager->>Elasticlunr: search(url)
     Elasticlunr->>Index: Query
@@ -61,22 +84,30 @@ sequenceDiagram
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/orassayag/full-text-search.git
 cd full-text-search
 ```
 
-2. Navigate to the server directory:
+2. Navigate to the project directory:
+
 ```bash
-cd server
+cd full-text-search
 ```
 
 3. Install dependencies:
+
 ```bash
 npm install
 ```
 
 ### Running the Application
+
+#### Available Scripts
+
+- `npm start`: Runs the demonstration with predefined URL rules and test cases
+- `npm run lint`: Runs ESLint to check code quality and style
 
 ```bash
 npm start
@@ -90,9 +121,9 @@ The application includes example rules for common services:
 
 ```javascript
 const setOfRules = {
-    'www.facebook.com/connect.js': 'Facebook',
-    'www.google-analytics.com/*': 'Google Analytics',
-    'www.twitter.com/scripts/v1/index.js': 'Twitter'
+  'www.facebook.com/connect.js': 'Facebook',
+  'www.google-analytics.com/*': 'Google Analytics',
+  'www.twitter.com/scripts/v1/index.js': 'Twitter',
 };
 ```
 
@@ -100,15 +131,16 @@ When you query a URL like `www.facebook.com/connect.js`, the engine returns `Fac
 
 ## Project Structure
 
+### Directory Structure
+
 ```
-full-text-search/
-├── server/
-│   ├── core/
-│   │   └── urlManager.js      # URL rules and test cases
-│   ├── models/
-│   │   └── UrlManager.js      # URL matching logic
-│   ├── index.js               # Entry point
-│   └── package.json
+src/
+├── core/
+│   └── urlManager.js      # URL rules and test cases
+├── models/
+│   └── UrlManager.js      # URL matching logic
+├── index.js               # Entry point
+├── package.json
 └── README.md
 ```
 
@@ -129,21 +161,33 @@ full-text-search/
 
 ## Configuration
 
-To customize URL rules, edit `server/core/urlManager.js`:
+### Development
 
-```javascript
-const setOfRules = {
-    'your.domain.com/path': 'Your Service',
-    'another.domain.com/*': 'Another Service'
-};
-```
+To customize URL rules or add new tests, edit `src/core/urlManager.js`:
+
+1. **Add Rules**: Update the `setOfRules` object
+2. **Add Tests**: Update the `urlsForTest` array
+3. **Verify**: Run `npm start` to see the results
+
+### Design Patterns
+
+- **Singleton Pattern**: The `UrlManager` handles the global search index
+- **Strategy Pattern**: Different matching strategies for exact and wildcard URLs
+- **Registry Pattern**: URL rules are managed in a centralized configuration
+
+### Best Practices
+
+- **Specificity**: Define more specific rules before generic ones
+- **Wildcards**: Use wildcards (`*`) sparingly for broad patterns
+- **Validation**: Always add corresponding test cases for new rules
+- **Consistency**: Maintain consistent naming conventions for services
 
 ## Built With
 
-* [Node.js](https://nodejs.org/en) - JavaScript runtime
-* [Elasticlunr.js](http://elasticlunr.com/) - Lightweight full-text search engine
-* [ESLint](https://eslint.org/) - Code quality and style checking
-* [Git](https://git-scm.com) - Version control
+- [Node.js](https://nodejs.org/en) - JavaScript runtime
+- [Elasticlunr.js](http://elasticlunr.com/) - Lightweight full-text search engine
+- [ESLint](https://eslint.org/) - Code quality and style checking
+- [Git](https://git-scm.com) - Version control
 
 ## Use Cases
 
@@ -165,12 +209,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## Author
 
-* **Or Assayag** - *Initial work* - [orassayag](https://github.com/orassayag)
-* Or Assayag <orassayag@gmail.com>
-* GitHub: https://github.com/orassayag
-* StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
-* LinkedIn: https://linkedin.com/in/orassayag
+- **Or Assayag** - _Initial work_ - [orassayag](https://github.com/orassayag)
+- Or Assayag <orassayag@gmail.com>
+- GitHub: https://github.com/orassayag
+- StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
+- LinkedIn: https://linkedin.com/in/orassayag
 
 ## License
 
 This application has an MIT license - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built for educational and research purposes
+- Respects robots.txt and implements rate limiting
+- Uses user-agent rotation to avoid detection
+- Implements polite crawling practices

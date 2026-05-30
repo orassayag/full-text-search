@@ -1,0 +1,74 @@
+{
+  "name": "full-text-search",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A Node.js application app showcasing full-text search with Elasticlunr.js for URL pattern matching. It demonstrates efficient URL matching against rule sets with wildcard support, offering a practical example of implementing a search engine for URL classification, filtering, and pattern matching",
+  "keywords": [
+    "full-text-search",
+    "elasticlunr",
+    "url-matching",
+    "pattern-matching",
+    "search-engine",
+    "nodejs",
+    "url-classification",
+    "wildcard-matching",
+    "javascript"
+  ],
+  "homepage": "https://github.com/orassayag/full-text-search#readme",
+  "bugs": {
+    "url": "https://github.com/orassayag/full-text-search/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/full-text-search.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/orassayag"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Or Assayag",
+    "email": "orassayag@gmail.com",
+    "url": "https://github.com/orassayag"
+  },
+  "contributors": [
+    {
+      "name": "Or Assayag",
+      "email": "orassayag@gmail.com",
+      "url": "https://github.com/orassayag"
+    }
+  ],
+  "type": "commonjs",
+  "main": "src/index.js",
+  "files": [
+    ".github",
+    ".vscode",
+    "src",
+    ".eslintrc.js",
+    ".gitignore",
+    ".prettierrc",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "INSTRUCTIONS.md",
+    "Instructions.txt",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "elasticlunr": "^0.9.5",
+    "eslint": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.7",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4"
+  }
+}

@@ -9,6 +9,7 @@ Everyone is welcome to contribute to this project. Contributing doesn't just mea
 ### Reporting Issues
 
 If you find a bug or have a feature request:
+
 1. Check if the issue already exists in the [GitHub Issues](https://github.com/orassayag/full-text-search/issues)
 2. If not, create a new issue with:
    - Clear title and description
@@ -32,10 +33,12 @@ If you find a bug or have a feature request:
 ### Code Style Guidelines
 
 This project uses:
+
 - **JavaScript** (ES6+)
 - **ESLint** for code quality
 
 Before submitting:
+
 ```bash
 # Install dependencies
 npm install
@@ -58,6 +61,7 @@ npm start
 ### Adding New Features
 
 When adding new features:
+
 1. Create appropriate models in `server/models/`
 2. Add business logic in `server/core/`
 3. Update documentation as needed
@@ -66,6 +70,7 @@ When adding new features:
 ### Testing New URL Rules
 
 When adding or modifying URL matching rules:
+
 1. Add test cases to `server/core/urlManager.js`
 2. Ensure the rules are specific enough to avoid false matches
 3. Test wildcard patterns thoroughly
@@ -75,9 +80,9 @@ When adding or modifying URL matching rules:
 
 Please feel free to contact me with any question, comment, pull-request, issue, or any other thing you have in mind.
 
-* Or Assayag <orassayag@gmail.com>
-* GitHub: https://github.com/orassayag
-* StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
-* LinkedIn: https://linkedin.com/in/orassayag
+- Or Assayag <orassayag@gmail.com>
+- GitHub: https://github.com/orassayag
+- StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
+- LinkedIn: https://linkedin.com/in/orassayag
 
 Thank you for contributing! 🙏

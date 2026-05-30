@@ -1,8 +1,17 @@
 {
-    "cSpell.words": [
-        "Assayag",
-        "elasticlunr",
-        "linkedin",
-        "orassayag"
-    ]
+  "eslint.trace.server": "messages",
+  "eslint.alwaysShowStatus": true,
+  "beautify.config": {
+    "brace_style": "collapse,preserve-inline"
+  },
+  "files.trimFinalNewlines": true,
+  "editor.insertSpaces": true,
+  "cSpell.words": ["Assayag", "elasticlunr", "orassayag"],
+  "cSpell.ignorePaths": [
+    "coverage",
+    "node_modules",
+    "dist",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml"
+  ]
 }
